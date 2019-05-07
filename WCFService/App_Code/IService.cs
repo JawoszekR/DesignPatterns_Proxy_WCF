@@ -10,34 +10,38 @@ using System.Text;
 [ServiceContract]
 public interface IService
 {
-
 	[OperationContract]
-	string GetData(int value);
-
-	[OperationContract]
-	CompositeType GetDataUsingDataContract(CompositeType composite);
+    PersonDto GetPersonById(PersonDto composite, int Id);
 
 	// TODO: Add your service operations here
 }
 
 // Use a data contract as illustrated in the sample below to add composite types to service operations.
 [DataContract]
-public class CompositeType
+public class PersonDto
 {
-	bool boolValue = true;
-	string stringValue = "Hello ";
+    string _name;
+    string _surname;
+    int _age;
 
 	[DataMember]
-	public bool BoolValue
+	public string Name
 	{
-		get { return boolValue; }
-		set { boolValue = value; }
+		get { return _name; }
+		set { _name = value; }
 	}
 
 	[DataMember]
-	public string StringValue
+	public string Surname
 	{
-		get { return stringValue; }
-		set { stringValue = value; }
+		get { return _surname; }
+		set { _surname = value; }
 	}
+
+    [DataMember]
+    public int Age
+    {
+        get { return _age; }
+        set { _age = value; }
+    }
 }

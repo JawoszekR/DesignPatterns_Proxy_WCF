@@ -9,21 +9,21 @@ using System.Text;
 // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service" in code, svc and config file together.
 public class Service : IService
 {
-	public string GetData(int value)
-	{
-		return string.Format("You entered: {0}", value);
-	}
+    DataBase _context;
+    public Service()
+    {
+        _context = new DataBase();
+    }
 
-	public CompositeType GetDataUsingDataContract(CompositeType composite)
-	{
-		if (composite == null)
-		{
-			throw new ArgumentNullException("composite");
-		}
-		if (composite.BoolValue)
-		{
-			composite.StringValue += "Suffix";
-		}
-		return composite;
-	}
+    public PersonDto GetPersonById(PersonDto composite, int Id)
+    {
+        var person = _context[Id];
+        var personDto = new PersonDto()
+        {
+            Age = (DateTime.Today - person.BirthDate).Days / 365,
+            Name = person.Name,
+            Surname = person.Surname
+        };
+        return personDto;
+    }
 }

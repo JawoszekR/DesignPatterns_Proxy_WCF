@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns_Proxy_WCF", "DesignPatterns_Proxy_WCF\DesignPatterns_Proxy_WCF.csproj", "{5D0B192E-ACA9-4C9D-B94C-ECD4649464DA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A0F341B4-BEA4-4E5E-8BF5-08EA59B031B5} = {A0F341B4-BEA4-4E5E-8BF5-08EA59B031B5}
+	EndProjectSection
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WCFService", "WCFService\", "{A0F341B4-BEA4-4E5E-8BF5-08EA59B031B5}"
 	ProjectSection(WebsiteProperties) = preProject
@@ -23,6 +26,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WCFService", "WCFService\",
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "52071"
+		SlnRelativePath = "WCFService\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject

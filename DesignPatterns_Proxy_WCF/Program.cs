@@ -10,6 +10,13 @@ namespace DesignPatterns_Proxy_WCF
     {
         static void Main(string[] args)
         {
+            var serviceClient = new ServiceReference1.ServiceClient();
+            var person = new ServiceReference1.PersonDto();
+            person = serviceClient.GetPersonById(person, 1);
+
+            Console.WriteLine(person.Name);
+            Console.WriteLine(person.Surname);
+            Console.ReadKey();
         }
     }
 }
