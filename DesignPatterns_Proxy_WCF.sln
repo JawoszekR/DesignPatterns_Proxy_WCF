@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns_Proxy_WCF", "DesignPatterns_Proxy_WCF\DesignPatterns_Proxy_WCF.csproj", "{5D0B192E-ACA9-4C9D-B94C-ECD4649464DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D0B192E-ACA9-4C9D-B94C-ECD4649464DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D0B192E-ACA9-4C9D-B94C-ECD4649464DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D0B192E-ACA9-4C9D-B94C-ECD4649464DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D0B192E-ACA9-4C9D-B94C-ECD4649464DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B3D05892-2897-4AED-98B4-AA75F72A6514}
+	EndGlobalSection
+EndGlobal
